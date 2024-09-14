@@ -10,34 +10,42 @@ body {
     background-size: cover;
     font-family: "Oswald", sans-serif;
 }
-
+/* General Navigation Styling */
 nav {
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; 
     background-color: #1E201E;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-    height: 100px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1); 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 1000; 
 }
-
 nav ul {
-    width: 100%;
     list-style: none;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: center; /* Center the menu items horizontally */
+    align-items: center; /* Center the menu items vertically */
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    flex: 1; /* Allow ul to take full width */
 }
 
 nav li {
-    height: 50px;
+    height: 30px;
 }
 
 nav a {
-    height: 100%;
-    padding: 20px;
+    padding: 0 20px; /* Increased horizontal padding */
     text-decoration: none;
+    color: #fff;
+    font-size: 20px; /* Font size */
     display: flex;
     align-items: center;
-    color: #fff;
-    font-size: 26px;
-    margin: 10px;
 }
 
 nav a:hover {
@@ -220,7 +228,7 @@ nav li:first-child {
         max-width: 100%;
     }
     .intro-text h1 {
-        font-size: 46px;  
+        font-size: 44px;  
     }
     .profile-photo {
         width: 250px;
